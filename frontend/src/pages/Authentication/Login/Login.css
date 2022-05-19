@@ -1,0 +1,33 @@
+.login-form {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    position: absolute;
+    width: 30% auto;
+    max-width: 32rem;
+    top: 10%;
+    border: 0;
+    padding: 2rem;
+    padding-top: 0rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.animation-icon{
+    position: relative;
+    left: 15%;
+    height: 60%;
+    width: 60%;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+label{
+    align-self: flex-start;
+}
