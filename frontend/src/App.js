@@ -1,12 +1,20 @@
-import './App.css';
-import Login from './pages/Authentication/Login/Login';
-import "bootstrap/dist/css/bootstrap.min.css";
-import Signup from './pages/Authentication/Signup/Signup';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoteCard from "./components/NoteCard/NoteCard";
+import { Loader } from "./components/";
+import { ProtectedRoute } from "./components";
+import {Login,LandingPage} from './pages';
 
 function App() {
   return (
     <div className="App">
-     <Login></Login> 
+      <BrowserRouter>
+        <Routes>
+          <Route element={<ProtectedRoute />}>
+            <Route exact path="/" element={<LandingPage />}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

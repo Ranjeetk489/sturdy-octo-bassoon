@@ -1,0 +1,81 @@
+@import url('../../css/style.css');
+
+
+.note-card-container {
+    position: absolute;
+  }
+  .optionBox {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    margin-left: 10px;
+  }
+  
+  .green-optionBox {
+    background-color: var(--green-color);
+  }
+  .orange-optionBox {
+    background-color: var(--orange-color);
+  }
+  .blue-optionBox {
+    background-color: var(--blue-color);
+  }
+  .red-optionBox {
+    background-color: var(--red-color);
+  }
+  .aqua-optionBox {
+    background-color: var(--aqua-color);
+  }
+  .salmon-optionBox {
+    background-color: var(--salmon-color);
+  }
+  
+  .note-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 1rem;
+    align-items: baseline;
+  }
+  .priority-field {
+    margin-left: 10px;
+    height: 1.9rem;
+    font-size: var(--fs-1);
+  }
+  .theme-optionsBox {
+    display: grid;
+    width: 12rem;
+    grid-template: "a a a";
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    z-index: 99;
+    background-color: var(--bg-color-variant);
+    padding: 12px;
+    transition: all 0.6s ease;
+  }
+  
+  .note-card-header {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .note-card-field {
+    margin-left: 1rem;
+    padding: 4px 0px 4px 8px;
+  }
+  .note-theme-btn {
+    color: var(--primary-color);
+    border: 0;
+    background: transparent;
+  }
+  .note-content-btn {
+    padding: 8px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--fs-1);
+    padding: 5px 12px;
+    border: 0;
+    box-shadow: 1px 1px 4px var(--black-color);
+  }
+  

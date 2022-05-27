@@ -1,0 +1,49 @@
+
+.sbar-container {
+    padding:2rem;
+  }
+  .userinfo-container{
+    align-items: center;
+    padding: 1rem 2rem; 
+  }
+  
+  .notetypes-container {
+    padding: 1rem 0rem;
+  }
+  
+  .notes-container{
+    padding:1rem;
+    align-items: center;
+    
+  }
+  button {
+    border:0;
+    background: transparent;
+  }
+  .sbar-pfl {
+    width: 2rem;
+  }
+  .sbar-title{
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .sbar-search{
+    position: relative;
+  }
+  .sbar-search-field {
+    width: 100%;
+    padding: 7px;
+    padding-left: 1.6rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+  .sbar-search-result{
+    height: 7rem;
+    overflow-y: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+  }
+  .sbar-search-ic {
+    position: absolute;
+    left: 5px;
+    top: 1.7rem;
+  }

@@ -1,4 +1,4 @@
-import axios from 'axios';
+ import axios from 'axios';
 
 const API_URL="https://notes-backend-v1.herokuapp.com/"
 
@@ -44,10 +44,10 @@ function logout () {
     localStorage.removeItem("user");
 }
 
-const authService = {
+const AuthService = {
     login,
     signup,
     logout
 }
 
-export default authService;
+export default AuthService;

@@ -1,0 +1,14 @@
+.landingpage-container {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    justify-items: center;
+}
+.wrapper {
+    justify-self: left;
+    margin-top: 4rem;
+}
+
+.hz-l {
+    border: 1px solid var(--black-color);
+}

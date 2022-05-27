@@ -5,13 +5,15 @@ import Lottie from 'lottie-react';
 import singupAnimation from '../../../assets/singup.json';
 import * as Yup from "yup";
 import { ToastContainer, toast } from 'react-toastify';
-import { signup } from "../../../store/slices/AuthenticationSlice/authSlice";
-import { clearMessage } from "../../../store/slices/AuthenticationSlice/messageSlice";
+import { signup } from "../../../store/slices/authSlice";
+import { clearMessage } from "../../../store/slices/messageSlice";
 import './Signup.css';
 
 const Signup = () => {
-  const [successful, setSuccessful] = useState(false);
+  const [successful, setSuccessfulToast] = useState(false);
   const { message } = useSelector((state) => state.message);
+  const {auth} = useSelector((state)=> state.auth.isLoggedIn);
+  console.log(auth)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(clearMessage());
@@ -54,19 +56,19 @@ const Signup = () => {
       pauseOnHover: true,
       progress: 1,
     })
-    setSuccessful(false);
+    setSuccessfulToast(false);
     dispatch(signup({ username, email, password }))
       .unwrap()
       .then(() => {
         toast.dismiss();
         toast.success("Successfuly Signed Up");
         toast.info("Redirecting to Home");
-        setSuccessful(true);
+        setSuccessfulToast(true);
       })
       .catch(() => {
         toast.dismiss();
         toast.error("singup failure!");
-        setSuccessful(false);
+        setSuccessfulToast(false);
       });
   };
   return (

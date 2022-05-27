@@ -1,0 +1,38 @@
+:root {
+    --red-color: #dc143c;
+    --green-color: #008000;
+    --yellow-color: #ffd700;
+    --aqua-color: #00ffff;
+    --blue-color: #1e90ff;
+    --orange-color: #ffa500;
+    --salmon-color: #fa8072;
+    --black-color: #000000;
+  
+    --bg-color-variant: #fffff0;
+    --primary-color: #fe4d28;
+    --secondary-color: #03dac6;
+    --white-color: #ffffff;
+
+    --fs-1: 700;
+}
+
+
+
+body {
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  [contentEditable='true']:empty:not(:focus):before {
+    content: attr(data-placeholder);
+  }
+  .h-80 {
+    height: 80vh;
+  }
+  .h-90 {
+    height: 90vh;
+  }
+  .max-w-75 {
+    max-width: 75%;
+  }

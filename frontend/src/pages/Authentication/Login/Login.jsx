@@ -7,8 +7,8 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Lottie from 'lottie-react';
 import loginAnimation from '../../../assets/login.json';
-import { login } from "../../../store/slices/AuthenticationSlice/authSlice";
-import { clearMessage } from "../../../store/slices/AuthenticationSlice/messageSlice";
+import { login } from "../../../store/slices/authSlice";
+import { clearMessage } from "../../../store/slices/messageSlice";
 import './Login.css';
 const Login = (props) => {
     const [loading, setLoading] = useState(false);

@@ -1,0 +1,22 @@
+.display-note-header{
+    display: flex;
+    justify-content: flex-end;
+    gap:1rem;
+    flex-grow: 1;
+  }
+.display-note-tag,.display-note-priority {
+    padding: 4px 14px;
+    background: var(--secondary-color);
+    border-radius: 7px;
+}
+.display-note-priority {
+    background: var(--primary-color);
+}
+.display-note-title, .display-note-content {
+    text-align: left;
+}
+
+.display-note-extraBtn{
+    gap:1rem;
+    padding-bottom: 1rem;
+}

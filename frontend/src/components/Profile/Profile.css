@@ -1,0 +1,47 @@
+.picture {
+    max-width: 15%;
+}
+
+.container {
+    display: grid;
+    grid-template: 1.5fr 1fr 2fr 3fr;
+}
+.pic-container {
+    gap: 4%;
+}
+.del-icon{
+    transform: translate(2px, -2px);
+}
+.email-container {
+    gap: 5%;
+    margin:0;
+    padding:0;
+}
+.field-title{
+    margin-top:1rem;
+}
+.email-field-title {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.al{
+    text-align: left;
+}
+
+.pfl-pic-title {
+    margin: 2rem 0rem 1.5rem 7rem;
+}
+.my-pfl {
+    margin-top: 2rem;
+
+}
+
+.profile-close-btn {
+    position: fixed;
+    border:0;
+    background-color: transparent;
+    color:orangered;
+    width: fit-content;
+    top: 1.4rem;
+}
